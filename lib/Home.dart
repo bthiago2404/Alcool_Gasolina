@@ -46,36 +46,7 @@ class _HomeState extends State<Home> {
     _limparCampos();
 
   }
-/*
-  void _calcular(){
 
-    double? precoAlcool = double.tryParse( _controllerAlcool.text );
-    double? precoGasolina = double.tryParse( _controllerGasolina.text );
-
-    if(precoAlcool == null || precoGasolina == null){
-      setState(() {
-        _textoResultado = "Número inválido, digite números maiores que 0 e utilizando (.)";
-      });
-    }else{
-      setState(() {
-        _textoResultado = "Número válido, faço o cálculo";
-      });
-    }
-
-    if((precoAlcool! / precoGasolina!) >= 0.7){
-      setState(() {
-        _textoResultado = "Melhor abastecer com Gasolina!";
-      });
-    }else{
-      setState(() {
-        _textoResultado = "Melhor abastecer com Alcool!";
-      });
-    }
-
-    _limparCampos();
-
-  }
-*/
   @override
   Widget build(BuildContext context) {
     return Scaffold(
